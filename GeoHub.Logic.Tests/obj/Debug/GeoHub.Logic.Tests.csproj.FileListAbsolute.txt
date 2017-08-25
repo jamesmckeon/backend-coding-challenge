@@ -1,0 +1,23 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\Castle.Core.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\Moq.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\nunit.framework.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\Moq.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\Moq.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Debug\nunit.framework.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\obj\Debug\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\obj\Debug\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\Castle.Core.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\Moq.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\nunit.framework.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\Moq.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\Moq.xml
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\nunit.framework.xml
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\obj\Debug\GeoHub.Logic.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\obj\Debug\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\obj\Debug\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\GeoHub.Logic.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Debug\GeoHub.Logic.pdb

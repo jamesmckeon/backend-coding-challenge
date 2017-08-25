@@ -1,0 +1,6 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\bin\Test\GeoService.ServiceUtils.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\bin\Test\GeoService.ServiceUtils.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\bin\Test\RestSharp.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\bin\Test\RestSharp.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\obj\Test\GeoService.ServiceUtils.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\obj\Test\GeoService.ServiceUtils.pdb

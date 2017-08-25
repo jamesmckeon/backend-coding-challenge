@@ -1,0 +1,12 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic\obj\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic\obj\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\obj\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\obj\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic\obj\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic\obj\Test\GeoHub.Logic.pdb

@@ -1,0 +1,49 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\Castle.Core.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\Moq.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\nunit.framework.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\Moq.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\Moq.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\bin\Test\nunit.framework.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\Castle.Core.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\Moq.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\nunit.framework.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\Moq.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\Moq.xml
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\bin\Test\nunit.framework.xml
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\Castle.Core.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\Moq.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\nunit.framework.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\Moq.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\Moq.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\bin\Test\nunit.framework.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\Castle.Core.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\Moq.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\nunit.framework.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\Moq.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\Moq.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\bin\Test\nunit.framework.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\suggest-api\GeoHub.Logic.Tests\obj\Test\GeoHub.Logic.Tests.pdb

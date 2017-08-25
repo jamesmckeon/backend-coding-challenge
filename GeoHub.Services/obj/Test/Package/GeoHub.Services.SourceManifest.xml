@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\obj\Test\Package\PackageTmp" />
+  <setAcl path="C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\obj\Test\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\obj\Test\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

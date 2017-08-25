@@ -1,0 +1,7 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.RestClient\obj\Test\GeoHub.RestClient..csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.RestClient\bin\Test\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.RestClient\bin\Test\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.RestClient\bin\Test\RestSharp.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.RestClient\bin\Test\RestSharp.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.RestClient\obj\Test\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.RestClient\obj\Test\GeoHub.RestClient.pdb

@@ -1,0 +1,9 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\obj\Release\GeoService.GeoNames.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Release\GeoService.GeoNames.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Release\GeoService.GeoNames.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Release\GeoService.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Release\GeoService.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\obj\Release\GeoService.GeoNames.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\obj\Release\GeoService.GeoNames.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Release\GeoService.ServiceModel.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Release\GeoService.ServiceModel.pdb

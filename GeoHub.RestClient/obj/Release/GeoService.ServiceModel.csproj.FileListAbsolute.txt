@@ -1,0 +1,5 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\bin\Release\GeoService.ServiceModel.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\bin\Release\GeoService.ServiceModel.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\obj\Release\GeoService.ServiceModel.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\obj\Release\GeoService.ServiceModel.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.ServiceModel\obj\Release\GeoService.ServiceModel.pdb

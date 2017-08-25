@@ -1,0 +1,33 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\GeoHub.GeoNamesClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\RestSharp.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\bin\Test\RestSharp.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\GeoHub.GeoNamesClient.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\RestSharp.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Test\RestSharp.xml
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\GeoHub.GeoNamesClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\RestSharp.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\bin\Test\RestSharp.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\backend-coding-challenge\suggest-api\GeoHub.GeoNamesClient\obj\Test\GeoHub.GeoNamesClient.pdb

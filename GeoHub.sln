@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoHub.GeoNamesClient", "GeoHub.GeoNamesClient\GeoHub.GeoNamesClient.csproj", "{D50002EE-2E35-4E53-8273-F0094ED9F0BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoHub.Logic", "GeoHub.Logic\GeoHub.Logic.csproj", "{F4BB26EE-6929-46B8-A228-B7BCDCA050B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoHub.Logic.Tests", "GeoHub.Logic.Tests\GeoHub.Logic.Tests.csproj", "{7BFDE84F-1E58-42D2-B02B-1500655C5E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoHub.Services", "GeoHub.Services\GeoHub.Services.csproj", "{03920ABE-98C2-44BE-91C5-3C114B04F761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoHub.RestClient", "GeoHub.RestClient\GeoHub.RestClient.csproj", "{C2A93D6B-5C6A-420C-AEEE-AF461704EE9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoHub.Services.Tests", "GeoHub.Services.Tests\GeoHub.Services.Tests.csproj", "{BE6F4021-B6B3-4A6F-9B46-72D07AE6D740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoHub.GeoNamesClient.Tests", "GeoHub.GeoNamesClient.Tests\GeoHub.GeoNamesClient.Tests.csproj", "{E240E1A4-C0D9-44B8-847C-4092638D7903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D50002EE-2E35-4E53-8273-F0094ED9F0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50002EE-2E35-4E53-8273-F0094ED9F0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50002EE-2E35-4E53-8273-F0094ED9F0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50002EE-2E35-4E53-8273-F0094ED9F0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D50002EE-2E35-4E53-8273-F0094ED9F0BD}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{D50002EE-2E35-4E53-8273-F0094ED9F0BD}.Test|Any CPU.Build.0 = Test|Any CPU
+		{F4BB26EE-6929-46B8-A228-B7BCDCA050B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BB26EE-6929-46B8-A228-B7BCDCA050B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BB26EE-6929-46B8-A228-B7BCDCA050B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BB26EE-6929-46B8-A228-B7BCDCA050B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4BB26EE-6929-46B8-A228-B7BCDCA050B1}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{F4BB26EE-6929-46B8-A228-B7BCDCA050B1}.Test|Any CPU.Build.0 = Test|Any CPU
+		{7BFDE84F-1E58-42D2-B02B-1500655C5E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFDE84F-1E58-42D2-B02B-1500655C5E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFDE84F-1E58-42D2-B02B-1500655C5E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFDE84F-1E58-42D2-B02B-1500655C5E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFDE84F-1E58-42D2-B02B-1500655C5E56}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{7BFDE84F-1E58-42D2-B02B-1500655C5E56}.Test|Any CPU.Build.0 = Test|Any CPU
+		{03920ABE-98C2-44BE-91C5-3C114B04F761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03920ABE-98C2-44BE-91C5-3C114B04F761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03920ABE-98C2-44BE-91C5-3C114B04F761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03920ABE-98C2-44BE-91C5-3C114B04F761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03920ABE-98C2-44BE-91C5-3C114B04F761}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{03920ABE-98C2-44BE-91C5-3C114B04F761}.Test|Any CPU.Build.0 = Test|Any CPU
+		{C2A93D6B-5C6A-420C-AEEE-AF461704EE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A93D6B-5C6A-420C-AEEE-AF461704EE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A93D6B-5C6A-420C-AEEE-AF461704EE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A93D6B-5C6A-420C-AEEE-AF461704EE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A93D6B-5C6A-420C-AEEE-AF461704EE9D}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{C2A93D6B-5C6A-420C-AEEE-AF461704EE9D}.Test|Any CPU.Build.0 = Test|Any CPU
+		{BE6F4021-B6B3-4A6F-9B46-72D07AE6D740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6F4021-B6B3-4A6F-9B46-72D07AE6D740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6F4021-B6B3-4A6F-9B46-72D07AE6D740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6F4021-B6B3-4A6F-9B46-72D07AE6D740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6F4021-B6B3-4A6F-9B46-72D07AE6D740}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6F4021-B6B3-4A6F-9B46-72D07AE6D740}.Test|Any CPU.Build.0 = Release|Any CPU
+		{E240E1A4-C0D9-44B8-847C-4092638D7903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E240E1A4-C0D9-44B8-847C-4092638D7903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E240E1A4-C0D9-44B8-847C-4092638D7903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E240E1A4-C0D9-44B8-847C-4092638D7903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E240E1A4-C0D9-44B8-847C-4092638D7903}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{E240E1A4-C0D9-44B8-847C-4092638D7903}.Test|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

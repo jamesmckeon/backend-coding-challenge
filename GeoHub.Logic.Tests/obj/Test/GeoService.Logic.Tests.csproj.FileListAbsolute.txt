@@ -1,0 +1,13 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\GeoService.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\GeoService.Logic.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\Castle.Core.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\GeoService.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\Moq.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\nunit.framework.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\GeoService.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\Moq.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\Moq.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\bin\Test\nunit.framework.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\obj\Test\GeoService.Logic.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\obj\Test\GeoService.Logic.Tests.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.Logic.Tests\obj\Test\GeoService.Logic.Tests.pdb

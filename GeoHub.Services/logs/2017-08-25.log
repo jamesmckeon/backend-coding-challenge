@@ -1,0 +1,63 @@
+2017-08-25 09:20:09.4251 ERROR Unhandled exception System.Exception: test
+   at GeoHub.Services.Controllers.HospitalsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\HospitalsController.cs:line 24
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2017-08-25 09:21:37.8450 ERROR Unhandled exception System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.GeoNamesClient.GeoNamesCityNameBuilder.BuildName(GeonameEntry entry) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\GeoNamesCityNameBuilder.cs:line 16
+   at GeoHub.GeoNamesClient.HospitalProvider.<Search>b__10_0(GeonameEntry result) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\HospitalProvider.cs:line 58
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at GeoHub.Logic.CertaintyRanker.Rank(IEnumerable`1 entries, String searchTerm, Coordinates sourceCoordinates) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\CertaintyRanker.cs:line 116
+   at GeoHub.Services.ResultsMapper.Map(IEnumerable`1 results, SuggestionQuery suggestionQuery, ILinkBuilder linkBuilder) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ResultsMapper.cs:line 56
+   at GeoHub.Services.Controllers.HospitalsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\HospitalsController.cs:line 60
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2017-08-25 09:22:53.7426 ERROR Unhandled exception System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.GeoNamesClient.GeoNamesCityNameBuilder.BuildName(GeonameEntry entry) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\GeoNamesCityNameBuilder.cs:line 16
+   at GeoHub.GeoNamesClient.HospitalProvider.<Search>b__10_0(GeonameEntry result) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\HospitalProvider.cs:line 58
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at GeoHub.Logic.CertaintyRanker.Rank(IEnumerable`1 entries, String searchTerm, Coordinates sourceCoordinates) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\CertaintyRanker.cs:line 116
+   at GeoHub.Services.ResultsMapper.Map(IEnumerable`1 results, SuggestionQuery suggestionQuery, ILinkBuilder linkBuilder) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ResultsMapper.cs:line 56
+   at GeoHub.Services.Controllers.HospitalsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\HospitalsController.cs:line 60
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()

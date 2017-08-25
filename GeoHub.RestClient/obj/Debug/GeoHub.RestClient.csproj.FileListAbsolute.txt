@@ -1,0 +1,13 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.RestClient\bin\Debug\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.RestClient\bin\Debug\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.RestClient\bin\Debug\RestSharp.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.RestClient\bin\Debug\RestSharp.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.RestClient\obj\Debug\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoHub.RestClient\obj\Debug\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.RestClient\bin\Debug\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.RestClient\bin\Debug\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.RestClient\bin\Debug\RestSharp.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.RestClient\bin\Debug\RestSharp.xml
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.RestClient\obj\Debug\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.RestClient\obj\Debug\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.RestClient\obj\Debug\GeoHub.RestClient.csprojResolveAssemblyReference.cache

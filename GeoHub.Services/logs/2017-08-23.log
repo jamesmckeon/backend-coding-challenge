@@ -1,0 +1,89 @@
+2017-08-23 09:48:28.9361 ERROR error querying hospitals System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ContainsKey(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 58
+   at GeoHub.Services.Controllers.HospitalsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\HospitalsController.cs:line 43
+2017-08-23 10:14:27.4592 ERROR error querying cities System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.Services.Controllers.CitiesController.SearchLargeCities(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\CitiesController.cs:line 52
+2017-08-23 16:26:17.5191 ERROR error querying cities System.NotImplementedException: The method or operation is not implemented.
+   at GeoHub.Logic.StringComparer.Equals(String x, String y) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 10
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.Equals(ServiceCacheKey other) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 78
+   at System.Collections.Generic.GenericEqualityComparer`1.Equals(T x, T y)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 172
+   at GeoHub.Services.Controllers.CitiesController.SearchLargeCities(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\CitiesController.cs:line 56
+2017-08-23 16:29:04.8848 ERROR error querying cities System.NotImplementedException: The method or operation is not implemented.
+   at GeoHub.Logic.StringComparer.Equals(String x, String y) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 10
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.Equals(ServiceCacheKey other) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 78
+   at System.Collections.Generic.GenericEqualityComparer`1.Equals(T x, T y)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 172
+   at GeoHub.Services.Controllers.CitiesController.SearchLargeCities(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\CitiesController.cs:line 56
+2017-08-23 16:30:45.4649 ERROR error querying cities System.NotImplementedException: The method or operation is not implemented.
+   at GeoHub.Logic.StringComparer.Equals(String x, String y) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 10
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.Equals(ServiceCacheKey other) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 78
+   at System.Collections.Generic.GenericEqualityComparer`1.Equals(T x, T y)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 168
+   at GeoHub.Services.Controllers.CitiesController.SearchLargeCities(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\CitiesController.cs:line 56
+2017-08-23 16:32:00.3094 ERROR error querying cities System.NotImplementedException: The method or operation is not implemented.
+   at GeoHub.Logic.StringComparer.Equals(String x, String y) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 10
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.Equals(ServiceCacheKey other) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 78
+   at System.Collections.Generic.GenericEqualityComparer`1.Equals(T x, T y)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 168
+   at GeoHub.Services.Controllers.CitiesController.SearchLargeCities(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\CitiesController.cs:line 56
+2017-08-23 16:34:34.8968 ERROR error querying cities System.NotImplementedException: The method or operation is not implemented.
+   at GeoHub.Services.ServiceCache.SearchNear(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 181
+   at GeoHub.Services.Controllers.CitiesController.SearchLargeCities(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\CitiesController.cs:line 60
+2017-08-23 16:36:21.1325 ERROR error querying cities System.NotImplementedException: The method or operation is not implemented.
+   at GeoHub.Services.ServiceCache.SearchNear(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 181
+   at GeoHub.Services.Controllers.CitiesController.SearchLargeCities(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\CitiesController.cs:line 60
+2017-08-23 17:08:02.2283 ERROR error querying airports System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.Logic.StringComparer.GetHashCode(String obj) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 29
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.GetHashCode() in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 66
+   at System.Collections.Generic.GenericEqualityComparer`1.GetHashCode(T obj)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 176
+   at GeoHub.Services.ServiceCache.SearchNear(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 192
+   at GeoHub.Services.Controllers.AirportsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\AirportsController.cs:line 58
+2017-08-23 17:09:37.1873 ERROR error querying airports System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.Logic.StringComparer.GetHashCode(String obj) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 29
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.GetHashCode() in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 66
+   at System.Collections.Generic.GenericEqualityComparer`1.GetHashCode(T obj)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 172
+   at GeoHub.Services.ServiceCache.SearchNear(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 192
+   at GeoHub.Services.Controllers.AirportsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\AirportsController.cs:line 58
+2017-08-23 17:10:25.6023 ERROR error querying airports System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.Logic.StringComparer.GetHashCode(String obj) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 29
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.GetHashCode() in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 66
+   at System.Collections.Generic.GenericEqualityComparer`1.GetHashCode(T obj)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 172
+   at GeoHub.Services.ServiceCache.SearchNear(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 192
+   at GeoHub.Services.Controllers.AirportsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\AirportsController.cs:line 58
+2017-08-23 17:12:10.1613 ERROR error querying airports System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.Logic.StringComparer.Equals(String x, String y) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 10
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.Equals(ServiceCacheKey other) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 82
+   at System.Collections.Generic.GenericEqualityComparer`1.Equals(T x, T y)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 184
+   at GeoHub.Services.ServiceCache.SearchNear(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 192
+   at GeoHub.Services.Controllers.AirportsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\AirportsController.cs:line 58
+2017-08-23 17:13:31.0343 ERROR error querying airports System.NullReferenceException: Object reference not set to an instance of an object.
+   at GeoHub.Logic.StringComparer.Equals(String x, String y) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\StringComparer.cs:line 10
+   at GeoHub.Services.ServiceCache.ServiceCacheKey.Equals(ServiceCacheKey other) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 82
+   at System.Collections.Generic.GenericEqualityComparer`1.Equals(T x, T y)
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at GeoHub.Services.ServiceCache.Search(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 172
+   at GeoHub.Services.ServiceCache.SearchNear(String searchTerm, BoundingBox boundingBox) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\ServiceCache.cs:line 192
+   at GeoHub.Services.Controllers.AirportsController.Get(SuggestionQuery query) in C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Services\Controllers\AirportsController.cs:line 58

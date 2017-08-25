@@ -1,0 +1,61 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>GeoHub.Services Autocomplete Example</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="scripts/jquery.easy-autocomplete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
+    <script src="scripts/site.js"></script>
+
+
+    <link href="Reset.css" rel="stylesheet" />
+    <link href="Site.css" rel="stylesheet" />
+    <link href="easy-autocomplete/easy-autocomplete.min.css" rel="stylesheet" />
+    <link href="easy-autocomplete/easy-autocomplete.themes.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css" rel="stylesheet" />
+    <style>
+        .ui-autocomplete-loading {
+            background: white url('ui-anim_basic_16x16.gif') right center no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <label for="cities">Enter a city: </label>
+        <input id="cities" data-cities="">
+    </div>
+    <div>
+        <label for="locationCheckBox">Use location?</label>
+        <input type="checkbox" id="locationCheckBox" placeholder="Please enter a city name ..."/>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            ExampleApp.Init();
+
+            ExampleApp.WireUpAutoComplete($("#cities"));
+
+            $('#locationCheckBox').change(function () {
+
+                ExampleApp.SetUseLocation(this.checked);
+
+
+            });
+
+        });
+
+
+    </script>
+</body>
+
+
+
+</html>
+

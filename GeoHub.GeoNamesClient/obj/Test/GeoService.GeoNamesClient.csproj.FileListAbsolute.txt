@@ -1,0 +1,11 @@
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\GeoService.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\GeoService.GeoNamesClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\GeoService.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\GeoService.ServiceUtils.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\RestSharp.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\GeoService.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\GeoService.ServiceUtils.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\bin\Test\RestSharp.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\obj\Test\GeoService.GeoNamesClient.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\obj\Test\GeoService.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2015\Projects\GeoService\GeoService.GeoNames\obj\Test\GeoService.GeoNamesClient.pdb
