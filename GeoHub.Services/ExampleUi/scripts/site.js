@@ -1,19 +1,23 @@
-﻿'use strict';
+'use strict';
 
-var ExampleApp = (function () {
+var ExampleApp = (function() {
     var isInitialized = false;
-    var coordinates;
+
+    //holds results of "search near your location" checkbox
+    var localCoordinates;
+    var selectedSuggestion;
+
 
     function init() {
         if (!isInitialized) {
             //wire up unhandled exception handler
-            $(document).ajaxError(function (event, request, settings, thrownError) {
+            $(document).ajaxError(function(event, request, settings, thrownError) {
                 var msg = thrownError ? thrownError : 'Error requesting page ' + settings.url;
                 swal(
-                   'ERROR!',
-                   msg,
-                   'error'
-               );
+                    'ERROR!',
+                    msg,
+                    'error'
+                );
 
             });
         }
@@ -26,40 +30,86 @@ var ExampleApp = (function () {
         if (val && navigator.geolocation) {
 
             navigator.geolocation.getCurrentPosition(
-                function (position) {
-                    coordinates = position.coords;
+                function(position) {
+                    localCoordinates = position.coords;
                 }
-                );
+            );
 
 
-        }
-        else if (!navigator.geolocation) {
+        } else if (!navigator.geolocation) {
             throw {
                 message: "Geolocation is not supported by this browser"
             }
         } else {
-            coordinates = null;
+            localCoordinates = null;
         }
     };
 
+    function getUrl(serviceMethod, q, latitude, longitude) {
+        var apiBaseUrl = "http://geo-complete-test.us-west-2.elasticbeanstalk.com/api/";
+        if (!serviceMethod) {
+            throw {
+                message: "serviceMethod is required"
+            }
+        }
+
+
+        var url = apiBaseUrl + serviceMethod + "?type=json";
+
+        if (q) {
+            url = url + "&q=" + q;
+        }
+
+        if (latitude) {
+
+            url = url + "&latitude = " + latitude + "&longitude = " + longitude;
+        }
+
+        return url;
+    }
+
+    function getLinkFromSelectedSuggestion(rel, name) {
+        $.each(selectedSuggestion.Links, function(i, l) {
+            if (l.Rel.toLowerCase() === rel.toLowerCase()) {
+                return q ? l.Href + "&q=" + name : l.Href;
+            }
+
+        });
+    }
+
     function wireUpAutoComplete(input) {
-        var citiesUrl = 'http://localhost/GeoHub.Services/api/suggestions';
 
+        //if input is cities and user has checked "use location"
+        //return url including long and lat
+        //else return url including only name search
+        // 
         var options = {
-            url: function (phrase) {
+            url: function(phrase) {
 
-                var url = citiesUrl + "?q=" + phrase;
+                if ($('#cities').is($(input))) {
 
-                if (coordinates) {
+                    if (!localCoordinates) {
+                        return getUrl("suggestions", phrase);
+                    } else {
+                        return getUrl("suggestions", phrase, localCoordinates.latitude, localCoordinates.longitude);
+                    }
 
-                    url = url + "&latitude=" + coordinates.latitude + "&longitude=" + coordinates.longitude;
                 }
+                if ($('#hospitals').is($(input))) {
+                    return selectedSuggestion ? getLinkFromSelectedSuggestion("Hospitals", phrase) :
+                        getUrl("Hospitals", phrase);
 
-                return url + "&type=json";
+
+                } else {
+                    return selectedSuggestion ? getLinkFromSelectedSuggestion("Airports", phrase) :
+                        getUrl("Airports", phrase);
+                }
 
             },
 
-            getValue: "Name",
+            getValue: function(element) {
+                return element.Name;
+            },
             requestDelay: 500,
             ajaxSettings: {
                 dataType: "json"
@@ -67,10 +117,8 @@ var ExampleApp = (function () {
 
             theme: "round",
             list: {
-                onSelectItemEvent: function () {
-                    var value = input.getSelectedItemData();
-
-                    // alert(value);
+                onSelectItemEvent: function() {
+                    selectedSuggestion = input.getSelectedItemData();
                 }
             }
         };
@@ -83,5 +131,3 @@ var ExampleApp = (function () {
         WireUpAutoComplete: wireUpAutoComplete
     }
 })();
-
-
