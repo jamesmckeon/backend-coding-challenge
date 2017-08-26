@@ -1,26 +1,26 @@
-# GeoComplete API
+# Suggest API
 
-GeoComplete is a Rest Api that provides autocomplete suggestions for large cities, airports, and hospitals.  While it currently integrates solely with the [GeoNames Api](http://www.geonames.org/), GeoComplete can be plugged into any combination of geo data apis (google, open street maps, etc.), and can easily be extended to provide suggestions for additional geo locations (e.g., post offices, stadiums, schools)
+Suggest is a Rest Api that provides autocomplete suggestions for large cities, airports, and hospitals.  While it currently integrates solely with the [GeoNames Api](http://www.geonames.org/), Suggest can be plugged into any combination of geo data apis (google, open street maps, etc.), and can easily be extended to provide suggestions for additional geo locations (e.g., post offices, stadiums, schools)
 
-GeoComplete was developed as a solution to Coveo's back end coding [challenge](https://github.com/coveo/backend-coding-challenge)
+Suggest was developed as a solution to Coveo's back end coding [challenge](https://github.com/coveo/backend-coding-challenge)
 
 ## Building Queries
 
-GeoComplete queries are constructed using any combination of the following:
+Suggest queries are constructed using any combination of the following:
 
 - q: the place name to search for.  Name search is executed as "startsWith" rather than "contains", and is case and whitespace - insensitive (optional)
 - longitude: used with latitude to specify a location to search near (required if latitude is provided) 
 - latitude: used with longitude to specify a location to search near (required if longitude is provided)
 - type: specifies what format should be returned (json or xml); default is xml (optional)
 
-GeoComplete currently offers three service methods
+Suggest currently offers three service methods
 - suggestions (returns [large cities](https://en.wikipedia.org/wiki/Settlement_hierarchy))
 - hospitals
 - airports
 
 ## Response Data
 
-A GeoComplete query returns a list of Suggestions:
+A Suggest query returns a list of Suggestions:
 
 - *Name*:  the name of a place, including state/province (depending on country) and country code. 
 - *Latitude*
@@ -168,7 +168,7 @@ Data caches are flushed every 4 hours, depending on the exact search executed
 
 ### Development Notes
 
-GeoComplete is a .Net Web Api 2.0 app developed using Visual Studio 2015:
+Suggest is a .Net Web Api 2.0 app developed using Visual Studio 2015:
 - [Nuget](http://nuget.org/) for package management
 - unit tested with [NUnit](http://nunit.org/) and [Moq](https://github.com/moq/moq)
 - DI via MS Unity
