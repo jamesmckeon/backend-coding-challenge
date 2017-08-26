@@ -22,37 +22,66 @@
         .ui-autocomplete-loading {
             background: white url('ui-anim_basic_16x16.gif') right center no-repeat;
         }
+
+   
     </style>
 </head>
 <body>
 
-    <div>
+    
+<fieldset>
+    <legend>Find cities</legend>
+    <input type="text" id="cities" placeholder="Start typing ..."/>
+    <input type="checkbox" id="citiesLocation" />Use your current location? </label>
+</fieldset>
+
+<fieldset>
+    <legend>Find hospitals</legend>
+    <input type="text" id="hospitals" placeholder="Start typing ..."/>
+    <input type="checkbox" id="hospitalsLocation" />Use your current location? </label>
+</fieldset>
+
+<fieldset>
+    <legend>Find Airports</legend>
+    <input type="text" id="airports" placeholder="Start typing ..." />
+    <input type="checkbox" id="airportsLocation" />Use your current location? </label>
+</fieldset>
+
+
+<div class="row">
+
+    <div class="left">
         <label for="cities">Enter a city: </label>
         <input id="cities" data-cities="">
     </div>
-    <div>
-        <label for="locationCheckBox">Use location?</label>
-        <input type="checkbox" id="locationCheckBox" placeholder="Please enter a city name ..."/>
+    <div class="right">
+        <label for="citiesLocation">
+
+            <input type="checkbox" id="citiesLocation"/>Use your location? </label>
     </div>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            ExampleApp.Init();
-
-            ExampleApp.WireUpAutoComplete($("#cities"));
-
-            $('#locationCheckBox').change(function () {
-
-                ExampleApp.SetUseLocation(this.checked);
+</div>
 
 
-            });
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        ExampleApp.Init();
+
+        ExampleApp.WireUpAutoComplete($("#cities"));
+
+        $('#locationCheckBox').change(function() {
+
+            ExampleApp.SetUseLocation(this.checked);
+
 
         });
 
+    });
 
-    </script>
+
+</script>
 </body>
 
 

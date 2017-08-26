@@ -1,7 +1,29 @@
 ﻿
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+html {
+    font-size: 16px;
+}
+
 
 body {
-    font-size: 18px;
+    
+    padding: 1.0em;
+}
+
+
+input {
+    vertical-align: middle;
+}
+
+input[type=text]
+{
+    width: 50%;
+
+}
+
+fieldset
+{
+    padding: 2.0em;
+    margin-bottom: 2.0em;
 }
