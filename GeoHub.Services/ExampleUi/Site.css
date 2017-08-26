@@ -1,26 +1,30 @@
-﻿
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-html, input {
-  font-size: 20px;
+html,
+input {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  padding: 1.0em;
+    padding: 2.0em;
 }
 
 input {
-  vertical-align: middle;
+    vertical-align: middle;
+}
+
+legend {
+    font-weight: bold;
 }
 
 input[type=text] {
-  width: 50%;
+    min-width: 20.0em;
 }
 
 fieldset {
-  padding: 1.0em;
-  margin-bottom: 2.0em;
+    padding: 1.5em 1em 1.5em 1em;
+    margin-bottom: 3em;
+    border: 0.1em solid black;
+    display: inline-block;
+    border-radius: 25px;
 }
-
-.ui-autocomplete-loading {
-			background: white url('ui-anim_basic_16x16.gif') right center no-repeat;
-		}
