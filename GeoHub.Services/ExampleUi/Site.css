@@ -1,29 +1,26 @@
 ﻿
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-html {
-    font-size: 16px;
+html, input {
+  font-size: 20px;
 }
-
 
 body {
-    
-    padding: 1.0em;
+  padding: 1.0em;
 }
-
 
 input {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
-input[type=text]
-{
-    width: 50%;
-
+input[type=text] {
+  width: 50%;
 }
 
-fieldset
-{
-    padding: 2.0em;
-    margin-bottom: 2.0em;
+fieldset {
+  padding: 1.0em;
+  margin-bottom: 2.0em;
 }
+
+.ui-autocomplete-loading {
+			background: white url('ui-anim_basic_16x16.gif') right center no-repeat;
+		}

@@ -1,90 +1,58 @@
-﻿
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-<head>
-    <meta name="viewport" content="width=device-width" />
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>
+			GeoHub.Services Autocomplete Example
+		</title>
+		<link href="Reset.css" rel="stylesheet" type="text/css">
+		<link href="Site.css" rel="stylesheet" type="text/css">
+		<link href="easy-autocomplete/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
+		<link href="easy-autocomplete/easy-autocomplete.themes.min.css" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<fieldset>
+			<legend>Find cities</legend> 
+			<input type="text" id="cities" placeholder="Start typing ..."> 
+			<label for="citiesLocation">
+			<input type="checkbox" id="citiesLocation">Use your current location?</label>
+		</fieldset>
+		<fieldset>
+			<legend>Find hospitals</legend> 
+			<input type="text" id="hospitals" placeholder="Start typing ..."> 
+			<label for="hospitalsLocation">
+			<input type="checkbox" id="hospitalsLocation">Use your current location?</label>
+		</fieldset>
+		<fieldset>
+			<legend>Find Airports</legend> 
+			<input type="text" id="airports" placeholder="Start typing ..."> 
+			<label for="airportsLocation">
+			<input type="checkbox" id="airportsLocation">Use your current location?</label>
+		</fieldset>
+		
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript">
+</script><script src="scripts/jquery.easy-autocomplete.min.js" type="text/javascript">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js" type="text/javascript">
+</script><script src="scripts/site.js" type="text/javascript">
+</script><script type="text/javascript">
+$(document).ready(function () {
 
-    <title>GeoHub.Services Autocomplete Example</title>
+			ExampleApp.Init();
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="scripts/jquery.easy-autocomplete.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
-    <script src="scripts/site.js"></script>
+			ExampleApp.WireUpAutoComplete($("#cities"));
 
+			$('#locationCheckBox').change(function () {
 
-    <link href="Reset.css" rel="stylesheet" />
-    <link href="Site.css" rel="stylesheet" />
-    <link href="easy-autocomplete/easy-autocomplete.min.css" rel="stylesheet" />
-    <link href="easy-autocomplete/easy-autocomplete.themes.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css" rel="stylesheet" />
-    <style>
-        .ui-autocomplete-loading {
-            background: white url('ui-anim_basic_16x16.gif') right center no-repeat;
-        }
+				ExampleApp.SetUseLocation(this.checked);
+			});
 
-   
-    </style>
-</head>
-<body>
+		});
 
-    
-<fieldset>
-    <legend>Find cities</legend>
-    <input type="text" id="cities" placeholder="Start typing ..."/>
-    <input type="checkbox" id="citiesLocation" />Use your current location? </label>
-</fieldset>
-
-<fieldset>
-    <legend>Find hospitals</legend>
-    <input type="text" id="hospitals" placeholder="Start typing ..."/>
-    <input type="checkbox" id="hospitalsLocation" />Use your current location? </label>
-</fieldset>
-
-<fieldset>
-    <legend>Find Airports</legend>
-    <input type="text" id="airports" placeholder="Start typing ..." />
-    <input type="checkbox" id="airportsLocation" />Use your current location? </label>
-</fieldset>
-
-
-<div class="row">
-
-    <div class="left">
-        <label for="cities">Enter a city: </label>
-        <input id="cities" data-cities="">
-    </div>
-    <div class="right">
-        <label for="citiesLocation">
-
-            <input type="checkbox" id="citiesLocation"/>Use your location? </label>
-    </div>
-
-</div>
+		});
 
 
-
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        ExampleApp.Init();
-
-        ExampleApp.WireUpAutoComplete($("#cities"));
-
-        $('#locationCheckBox').change(function() {
-
-            ExampleApp.SetUseLocation(this.checked);
-
-
-        });
-
-    });
-
-
-</script>
-</body>
-
-
-
+		</script>
+	</body>
 </html>
-
