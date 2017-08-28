@@ -33,15 +33,20 @@ namespace GeoHub.GeoNamesClient
             NameBuilder = cityNameBuilder;
         }
 
-        public IQueryable<GeoDataEntry> Search(string searchTerm)
+        public IQueryable<GeoDataEntry> Search(string searchTerm,int maxResults = 50)
 
         {
+
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                throw new ArgumentNullException(nameof(maxResults));
+            }
 
             IQueryable<GeoDataEntry> results = null;
 
             var requestString =
                 string.Format("searchJSON?name_startsWith={0}&userName=jamesmckeon&cities=cities15000&maxRows={1}",
-                    searchTerm, 1000);
+                    searchTerm, maxResults);
 
 
             var response = ClientFactory.GetClient(ApiUrlRoot).Get<GeoNamesResponse>(requestString);
@@ -62,7 +67,7 @@ namespace GeoHub.GeoNamesClient
             return results;
         }
 
-        public IQueryable<GeoDataEntry> SearchNear(string searchTerm, BoundingBox boundingBox)
+        public IQueryable<GeoDataEntry> SearchNear(string searchTerm, BoundingBox boundingBox, int maxResults = 50)
         {
             if (boundingBox == null)
             {
@@ -76,12 +81,12 @@ namespace GeoHub.GeoNamesClient
             if (string.IsNullOrEmpty(searchTerm))
             {
 
-                requestString = string.Format("searchJSON?username={0}&cities=cities15000&maxRows={1}&{2}", userName, maxRows, GetCoordinateArgs(boundingBox));
+                requestString = string.Format("searchJSON?username={0}&cities=cities15000&maxRows={1}&{2}", userName, maxResults, GetCoordinateArgs(boundingBox));
             }
             else
             {
                 
-                requestString = string.Format("searchJSON?name_startsWith={0}&username={1}&cities=cities15000&maxRows={2}&{3}", searchTerm, userName, maxRows, GetCoordinateArgs(boundingBox));
+                requestString = string.Format("searchJSON?name_startsWith={0}&username={1}&cities=cities15000&maxRows={2}&{3}", searchTerm, userName, maxResults, GetCoordinateArgs(boundingBox));
             }
 
 

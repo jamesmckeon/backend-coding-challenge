@@ -25,7 +25,7 @@ namespace GeoHub.GeoNamesClient
             }
             else
             {
-                return string.Format("{0}, {1}, {2}", entry.Name, entry.AdminName1, entry.CountryCode);
+                return string.Format("{0}, {1}", entry.Name,  entry.CountryCode);
             }
         }
     }

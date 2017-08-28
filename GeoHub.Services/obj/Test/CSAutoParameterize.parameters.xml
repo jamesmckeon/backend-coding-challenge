@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="dataContext-Web.config Connection String" description="dataContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=./SQLEXPRESS2012;Initial Catalog=GeoHub.Services;User Id=geoapp;Password=h!Q6$/;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\jbmckeon\\Source\\Repos\\GeoHub\\GeoHub\.Services\\obj\\Test\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dataContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\jbmckeon\\Documents\\Visual\ Studio\ 2017\\Projects\\coveo\\GeoHub\.Services\\obj\\Test\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dataContext']/@connectionString" />
   </parameter>
 </parameters>

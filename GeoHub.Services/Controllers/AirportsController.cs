@@ -23,26 +23,15 @@ namespace GeoHub.Services.Controllers
         public IHttpActionResult Get([FromUri]SuggestionQuery query)
         {
 
-            Coordinates sourceCoordinates = null;
 
-            if (query != null)
+            if (query == null)
             {
-                if (!string.IsNullOrEmpty(query.Latitude) || !string.IsNullOrEmpty(query.Longitude))
-                {
-                    try
-                    {
-                        sourceCoordinates = Coordinates.FromString(query.Latitude, query.Longitude);
-                    }
-                    catch (ArgumentException ex)
-                    {
-
-                        throw new ParameterException(ex.ParamName);
-                    }
-
-                }
+                throw new NullQueryStringException();
             }
 
-          
+            query.Validate();
+
+            Coordinates sourceCoordinates = query.Coordinates();
 
             IEnumerable<GeoDataEntry> results = null;
 
@@ -52,12 +41,12 @@ namespace GeoHub.Services.Controllers
 
                 if (sourceCoordinates == null)
                 {
-                    results = DataProvider.Search(searchTerm);
+                    results = DataProvider.Search(searchTerm, query.MaxResults);
                 }
                 else
                 {
                     results = DataProvider.SearchNear(searchTerm,
-                        new BoundingBox(sourceCoordinates, Defaults.defaultRadiusKm));
+                        new BoundingBox(sourceCoordinates, Defaults.defaultRadiusKm), query.MaxResults);
                 }
 
             }

@@ -20,34 +20,26 @@ namespace GeoHub.Services.Controllers
 
         public IHttpActionResult Get([FromUri]SuggestionQuery query)
         {
-
-            Coordinates sourceCoordinates = null;
-
-            if (!string.IsNullOrEmpty(query.Latitude) || !string.IsNullOrEmpty(query.Longitude))
+            if (query == null)
             {
-                try
-                {
-                    sourceCoordinates = Coordinates.FromString(query.Latitude, query.Longitude);
-                }
-                catch (ArgumentException ex)
-                {
-
-                    throw new ParameterException(ex.ParamName);
-                }
-
+                throw new NullQueryStringException();
             }
+
+            query.Validate();
+
+            Coordinates sourceCoordinates = query.Coordinates();
 
             IEnumerable<GeoDataEntry> results = null;
             try
             {
                 if (sourceCoordinates == null)
                 {
-                    results = DataProvider.Search(query?.Q);
+                    results = DataProvider.Search(query?.Q, query.MaxResults);
                 }
                 else
                 {
                     results = DataProvider.SearchNear(query?.Q,
-                        new BoundingBox(sourceCoordinates, Defaults.defaultRadiusKm));
+                        new BoundingBox(sourceCoordinates, Defaults.defaultRadiusKm), query.MaxResults);
                 }
 
             }

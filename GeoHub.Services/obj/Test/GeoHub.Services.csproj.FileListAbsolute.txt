@@ -232,7 +232,9 @@ C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bi
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\Newtonsoft.Json.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\NLog.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Cors.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Helpers.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Http.Cors.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Http.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Http.WebHost.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Mvc.dll
@@ -254,6 +256,7 @@ C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bi
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\NLog.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Http.Cors.xml
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\Newtonsoft.Json.xml
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Net.Http.Formatting.xml
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\bin\System.Web.Helpers.xml

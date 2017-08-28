@@ -6,7 +6,6 @@ namespace GeoHub.GeoNamesClient
     public abstract class GeoNamesProviderBase
     {
         protected const string userName = "jamesmckeon";
-        protected int maxRows = 1000;
         protected string ApiUrlRoot
         {
             get { return "http://api.geonames.org"; }

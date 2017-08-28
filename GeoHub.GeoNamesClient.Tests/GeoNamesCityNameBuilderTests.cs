@@ -23,17 +23,7 @@ namespace GeoHub.GeoNamesClient.Tests
         }
 
         [Test]
-        public void BuildName_EmptyAdminCode_SkipsState()
-        {
-            var data = new GeonameEntry() { Name = "Test Name", AdminCode1 = null, CountryCode = "XX" };
-            var expected = "Test Name, XX";
-
-            Assert.AreEqual(expected, Target.BuildName(data));
-
-        }
-
-        [Test]
-        public void BuildName_NumericAdminCode_SkipsState()
+        public void BuildName_NotUs_SkipsState()
         {
             var data = new GeonameEntry() { Name = "Test Name", AdminCode1 = "1AAAA", CountryCode = "XX" };
             var expected = "Test Name, XX";
@@ -43,10 +33,10 @@ namespace GeoHub.GeoNamesClient.Tests
         }
 
         [Test]
-        public void BuildName_NonNumericAdminCode_IncludesState()
+        public void BuildName_US_IncludesState()
         {
-            var data = new GeonameEntry() { Name = "Test Name", AdminCode1 = "Test State", CountryCode = "XX" };
-            var expected = "Test Name, Test State, XX";
+            var data = new GeonameEntry() { Name = "Test Name", AdminCode1 = "Test State", CountryCode = "US" };
+            var expected = "Test Name, Test State, US";
 
             Assert.AreEqual(expected, Target.BuildName(data));
 

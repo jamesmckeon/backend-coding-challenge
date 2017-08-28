@@ -31,29 +31,12 @@ namespace GeoHub.Services
 
             IEnumerable<Suggestion> suggestions = null;
 
-            if (results != null)
+            if (results?.Count() > 0 )
             {
 
-
-                //if suggestionQuery is empty, there's nothing to rank against
-                if (suggestionQuery == null || suggestionQuery.IsEmpty())
-                {
-                    suggestions = results.Select(r => new Suggestion()
-                    {
-                        Certainty = 0,
-                        Longitude = r.Longitude,
-                        Latitude = r.Latitude,
-                        Name = r.Name
-                    }).OrderBy(r => r.Name);
-                }
-                else
-                {
-                    Coordinates coordinates = string.IsNullOrEmpty(suggestionQuery.Longitude)
-                   ? null
-                   : Coordinates.FromString(suggestionQuery.Latitude, suggestionQuery.Longitude);
-
-
-                    suggestions = CertaintyRanker.Rank(results, suggestionQuery.Q, coordinates)
+                    suggestions = CertaintyRanker.Rank(results, suggestionQuery.Q, suggestionQuery.Coordinates())
+                    .OrderByDescending(o => o.Certainty)
+                    .Take(suggestionQuery.MaxResults)
                     .Select(c => new Suggestion()
                     {
                         Certainty = c.Certainty,
@@ -63,9 +46,6 @@ namespace GeoHub.Services
                         Links = linkBuilder.BuildLinks(c.Entry)
                     }).OrderByDescending(r => r.Certainty);
                 }
-
-
-            }
 
             //if suggestions are null, return an empty array
             return new SuggestionQueryResult() {Suggestions = suggestions ?? new Suggestion[] {}};

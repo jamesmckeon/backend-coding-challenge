@@ -74,11 +74,19 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -190,6 +198,8 @@
     <Compile Include="Data\SuggestionQueryResult.cs" />
     <Compile Include="Defaults.cs" />
     <Compile Include="Exceptions\DataProviderException.cs" />
+    <Compile Include="Exceptions\NullQueryStringException.cs" />
+    <Compile Include="Filters\NullQueryStringExceptionFilter.cs" />
     <Compile Include="ILinkBuilder.cs" />
     <Compile Include="IResultsMapper.cs" />
     <Compile Include="LinkBuilder.cs" />
@@ -210,10 +220,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="ExampleUi\easy-autocomplete\easy-autocomplete.css" />
-    <Content Include="ExampleUi\easy-autocomplete\easy-autocomplete.min.css" />
-    <Content Include="ExampleUi\easy-autocomplete\easy-autocomplete.themes.css" />
-    <Content Include="ExampleUi\easy-autocomplete\easy-autocomplete.themes.min.css" />
     <None Include="ExampleUi\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ExampleUi\index.html" />
     <Content Include="ExampleUi\Reset.css" />
@@ -248,10 +254,6 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ExampleUi\easy-autocomplete\maps\easy-autocomplete.css.map" />
-    <Content Include="ExampleUi\easy-autocomplete\maps\easy-autocomplete.min.css.map" />
-    <Content Include="ExampleUi\easy-autocomplete\maps\easy-autocomplete.themes.css.map" />
-    <Content Include="ExampleUi\easy-autocomplete\maps\easy-autocomplete.themes.min.css.map" />
     <Content Include="ExampleUi\scripts\jquery-1.10.2.min.map" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>

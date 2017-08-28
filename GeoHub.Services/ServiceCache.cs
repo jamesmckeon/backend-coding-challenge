@@ -13,16 +13,33 @@ namespace GeoHub.Services
     /// <summary>
     /// Provides thread-safe caching of service data
     /// </summary>
+    /// <remarks>Refreshes cache if duration has expired, or if the last search for a searchTerm/Latitude/Longitude combination
+    /// was executed for a smaller maxResults value than is current</remarks>
     public class ServiceCache : IGeoDataProvider
     {
-
+        /// <summary>
+        /// Uniquely identifies an IGeoDataProvider query
+        /// </summary>
         public class ServiceCacheKey : IEquatable<ServiceCacheKey>
         {
 
-
+            private DateTime _createdDate;
             private string _searchTerm = null;
             private BoundingBox _boundingBox = null;
+            private int _maxResults = -1;
 
+            public DateTime CreatedTime
+            {
+                get { return _createdDate; }
+            }
+
+            /// <summary>
+            /// The value of maxResults that was passed to the underlying IGeoDataProvider instance when it was last queried
+            /// </summary>
+            public int MaxResults
+            {
+                get { return _maxResults; }
+            }
             public string SearchTerm
             {
                 get { return _searchTerm; }
@@ -33,7 +50,12 @@ namespace GeoHub.Services
                 get { return _boundingBox; }
             }
             protected IEqualityComparer<string> StringComparer { get; set; }
-            public ServiceCacheKey(IEqualityComparer<string> stringComparer, BoundingBox boundingBox, string searchTerm)
+
+            /// <param name="stringComparer"></param>
+            /// <param name="boundingBox"></param>
+            /// <param name="searchTerm"></param>
+            /// <param name="maxResults"></param>
+            public ServiceCacheKey(IEqualityComparer<string> stringComparer, BoundingBox boundingBox, string searchTerm, int maxResults)
             {
                 if (stringComparer == null)
                 {
@@ -47,8 +69,15 @@ namespace GeoHub.Services
                     throw new ArgumentException("Either searchTerm or boundingBox must be provided");
                 }
 
+                if (maxResults < 1)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(maxResults));
+                }
+
                 _boundingBox = boundingBox;
                 _searchTerm = searchTerm;
+                _maxResults = maxResults;
+                _createdDate = DateTime.Now;
             }
 
             public override bool Equals(object obj)
@@ -86,25 +115,23 @@ namespace GeoHub.Services
         }
         protected TimeSpan CacheDuration { get; set; }
         protected IEqualityComparer<string> StringComparer { get; set; }
-        protected DateTime LastFlushed { get; set; }
-        /// <summary>
-        /// All entries that have been searched by key
-        /// </summary>
-        protected Dictionary<ServiceCacheKey, IQueryable<GeoDataEntry>> QueriedEntries { get; set; }
-        /// <summary>
-        /// All entries that have been searched without one or more search parameters provided
-        /// </summary>
-        protected List<GeoDataEntry> AllEntries { get; set; }
+        protected Dictionary<ServiceCacheKey, IQueryable<GeoDataEntry>> Entries { get; set; }
         protected IGeoDataProvider DataProvider { get; set; }
         protected IAppLogger Logger { get; set; }
+
+        /// <summary>
+        /// The  minimum maxResults value that will be passed to  IGeoDataProvider instances
+        /// </summary>
+        protected int DataProviderMinResults { get; set; }
         /// <summary>
         /// Instantiates a ServiceCache
         /// </summary>
         /// <param name="cacheDuration">The cache expiration timespan (i.e., how long data should be cached for) (required)</param>
         /// <param name="geoDataProvider">The IGeoDataProvder instance whose data is being cached (required)</param>
-        ///    /// <param name="logger">(required)</param>
+         /// <param name="logger">(required)</param>
         /// <param name="stringComparer">(required)</param>
-        public ServiceCache(TimeSpan cacheDuration, IGeoDataProvider geoDataProvider, IAppLogger logger, IEqualityComparer<string> stringComparer)
+        /// <param name="minDataProviderResults">The minimum maxResults value that will be passed to this cache's IGeoDatProvider</param>
+        public ServiceCache(TimeSpan cacheDuration, IGeoDataProvider geoDataProvider, IAppLogger logger, IEqualityComparer<string> stringComparer, int minDataProviderResults = 50)
         {
 
             if (geoDataProvider == null)
@@ -125,97 +152,72 @@ namespace GeoHub.Services
             DataProvider = geoDataProvider;
             CacheDuration = cacheDuration;
             StringComparer = stringComparer;
-            LastFlushed = DateTime.Now;
-            QueriedEntries = new Dictionary<ServiceCacheKey, IQueryable<GeoDataEntry>>();
-            AllEntries = new List<GeoDataEntry>();
+            Entries = new Dictionary<ServiceCacheKey, IQueryable<GeoDataEntry>>();
             Logger = logger;
-
+            DataProviderMinResults = minDataProviderResults;
         }
 
-        private IQueryable<GeoDataEntry> GetAll()
+
+        public IQueryable<GeoDataEntry> Search(string searchTerm, int maxResults)
         {
-            lock (AllEntries)
+            return Search(searchTerm, null, maxResults);
+        }
+
+        protected IQueryable<GeoDataEntry> Search(string searchTerm, BoundingBox boundingBox, int maxResults)
+        {
+           
+
+            lock (Entries)
             {
-                if (AllEntries.Count == 0)
+                //always want to query at least DataProviderMinResults # of entries  so that 
+                //Ranking logic is (most) accurately applied
+                maxResults = Math.Max(maxResults, DataProviderMinResults);
+
+                //remove entry if it already exists and is expired
+                var newKey = new ServiceCacheKey(StringComparer, boundingBox, searchTerm, maxResults);
+                ServiceCacheKey existingKey = Entries.ContainsKey(newKey) ? Entries.Keys.Single(k => k.Equals(newKey)) : null;
+
+                if (existingKey != null && IsFlushable(existingKey))
                 {
-                    AllEntries.AddRange(DataProvider.Search(null));
+                    Entries.Remove(existingKey);
+                    existingKey = null;
                 }
-            }
-
-            return AllEntries.AsQueryable();
-        }
-        public IQueryable<GeoDataEntry> Search(string searchTerm)
-        {
-            return Search(searchTerm, null);
-        }
-
-        protected IQueryable<GeoDataEntry> Search(string searchTerm, BoundingBox boundingBox)
-        {
-            //flush cache if it has expired
-            if (IsFlushable())
-            {
-                Flush();
-            }
 
 
-            //if searchTerm hasn't been provided, just return all entries
-            if (string.IsNullOrEmpty(searchTerm) && boundingBox == null)
-            {
-                //TODO might perform better to returns AllEntries first and then flush cache if it's time to
-                return GetAll();
-
-            }
-            else //return entries matching search term
-            {
-                lock (QueriedEntries)
+                //if this set of args hasn't been queried before, or
+                //if it has but for a lower number of maxResults, refresh cache for this key
+                if (existingKey == null || existingKey.MaxResults < maxResults)
                 {
-                    var key = new ServiceCacheKey(StringComparer, boundingBox, searchTerm);
-                    if (!QueriedEntries.ContainsKey(key))
+                    if (boundingBox != null)
                     {
-                        if (boundingBox != null)
-                        {
-                            QueriedEntries[key] = DataProvider.SearchNear(searchTerm, boundingBox);
-                        }
-                        else
-                        {
-                            QueriedEntries[key] = DataProvider.Search(searchTerm.Trim());
-                        }
-                        
+                        Entries[newKey] = DataProvider.SearchNear(searchTerm, boundingBox, maxResults);
                     }
-                    return QueriedEntries[key];
-                }
+                    else
+                    {
+                        Entries[newKey] = DataProvider.Search(searchTerm.Trim(), maxResults);
+                    }
 
+                }
+                return Entries[newKey];
             }
+
+
         }
 
-        public IQueryable<GeoDataEntry> SearchNear(string searchTerm, BoundingBox boundingBox)
+        public IQueryable<GeoDataEntry> SearchNear(string searchTerm, BoundingBox boundingBox, int maxResults)
         {
-            return Search(searchTerm, boundingBox);
+            return Search(searchTerm, boundingBox, maxResults);
 
         }
 
         /// <summary>
-        /// returns true if the cache duration has expired/been exceeded
+        /// returns true if a cache entry has expired
         /// </summary>
         /// <returns></returns>
-        protected bool IsFlushable()
+        protected bool IsFlushable(ServiceCacheKey key)
         {
-            return DateTime.Now - LastFlushed > CacheDuration;
+            return DateTime.Now - key.CreatedTime > CacheDuration;
         }
 
-        protected void Flush()
-        {
-            lock (AllEntries)
-            {
-                AllEntries.Clear();
-            }
-
-            lock (QueriedEntries)
-            {
-                QueriedEntries.Clear();
-            }
-
-            LastFlushed = DateTime.Now;
-        }
     }
 }

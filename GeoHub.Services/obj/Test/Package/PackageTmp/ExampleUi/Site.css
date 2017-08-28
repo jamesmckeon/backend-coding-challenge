@@ -1,7 +1,36 @@
-﻿
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+html,
+input {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 body {
-    font-size: 18px;
+    padding: 2.0em;
+}
+
+/*input {
+    vertical-align: middle;
+}*/
+
+legend {
+    font-weight: bold;
+}
+
+/*input[type=text] {
+    min-width: 20.0em;
+}*/
+
+fieldset {
+    padding: 1.5em 1em 1.5em 1em;
+    margin-bottom: 3em;
+    border: 0.1em solid black;
+    display: inline-block;
+    border-radius: 25px;
+    width: 30em;
+}
+
+.selectContainer {
+    display: inline-block;
+    width: 50%;
 }

@@ -16,6 +16,7 @@ namespace GeoHub.Services.Filters
             if (context.Exception is ParameterException)
             {
                 context.Response = new HttpResponseMessage(HttpStatusCode.BadRequest);
+               
             }
         }
     }

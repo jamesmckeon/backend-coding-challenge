@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.ExceptionHandling;
 using GeoHub.Services.Filters;
 using GeoHub.Services.Logging;
@@ -14,8 +15,12 @@ namespace GeoHub.Services
     {
         public static void Register(HttpConfiguration config)
         {
-          
+
             config.Filters.Add(new ParameterExceptionFilter());
+            config.Filters.Add(new NullQueryStringExceptionFilter());
+
+            //var cors = new EnableCorsAttribute("*", "*", "GET");
+            //config.EnableCors(cors);
 
             GlobalConfiguration.Configuration.Services.Add(typeof(IExceptionLogger), new TraceExceptionLogger());
 
