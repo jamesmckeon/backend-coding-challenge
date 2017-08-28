@@ -27,7 +27,7 @@ A Suggest query returns a list of Suggestions:
 - *Longitude* (required if Latitude is provided)
 - *Certainty*:  Indicates how relevant a search result/suggestion is to its source query
 - *Links*: A collection of links that can be used to navigate the Api using the Suggestion's coordinates
-- *MaxResults* the maximum number of results that should be returned, ordered descending by Certainty (optional, default is 10)
+- *MaxResults*: the maximum number of results that should be returned, ordered descending by Certainty (optional, default is 10)
 
 Example JSON response :
 
