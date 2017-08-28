@@ -8,10 +8,12 @@ Suggest was developed as a solution to Coveo's back end coding [challenge](https
 
 Suggest queries are constructed using any combination of the following:
 
-- q: the place name to search for.  Name search is executed as "startsWith" rather than "contains", and is case and whitespace - insensitive (optional)
-- longitude: used with latitude to specify a location to search near (required if latitude is provided) 
-- latitude: used with longitude to specify a location to search near (required if longitude is provided)
-- type: specifies what format should be returned (json or xml); default is xml (optional)
+- *q*: the place name to search for.  Name search is executed as "startsWith" rather than "contains", and is case and whitespace - insensitive (optional)
+- *longitude*: used with latitude to specify a location to search near (required if latitude is provided) 
+- *latitude*: used with longitude to specify a location to search near (required if longitude is provided)
+- *type*: specifies what format should be returned (json or xml); default is xml (optional)
+- *MaxResults*: the maximum number of results that should be returned, ordered descending by Certainty
+
 
 Suggest currently offers three service methods
 - suggestions (returns [large cities](https://en.wikipedia.org/wiki/Settlement_hierarchy))
@@ -22,12 +24,11 @@ Suggest currently offers three service methods
 
 A Suggest query returns a list of Suggestions:
 
-- *Name*:  the name of a place, including state/province (depending on country) and country code (optional). 
-- *Latitude* (required if Longitude is provided)
-- *Longitude* (required if Latitude is provided)
+- *Name*:  the name of a place, including state/province (depending on country) and country code. 
+- *Latitude* 
+- *Longitude*
 - *Certainty*:  Indicates how relevant a search result/suggestion is to its source query
 - *Links*: A collection of links that can be used to navigate the Api using the Suggestion's coordinates
-- *MaxResults*: the maximum number of results that should be returned, ordered descending by Certainty (optional, default is 10)
 
 Example JSON response :
 
