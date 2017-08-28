@@ -154,11 +154,11 @@ Example JSON response :
 
 Airports near Portland, OR, USA: 
 ```
-    [hospitals?type=json&latitude=45.52345&Longitude=-122.67621](http://autocomplete.us-east-2.elasticbeanstalk.com/api/hospitals?type=json&latitude=45.52345&Longitude=-122.67621)
+    hospitals?type=json&latitude=45.52345&Longitude=-122.67621
 ``` 
 Airports with names starting with "Los A", json return type:
 ```
-    [airports?q=los%20a&type=json](http://autocomplete.us-east-2.elasticbeanstalk.com/api/airports?q=los%20a&type=json)
+    airports?q=los%20a&type=json
 ```
 
 ## Endpoints
