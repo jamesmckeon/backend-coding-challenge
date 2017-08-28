@@ -13,7 +13,7 @@ var ExampleApp = (function () {
     //returns Base Url of current deployment
     function getApiBaseUrl() {
 
-        return window.location.href.replace("ExampleUi/index.html", "api/");
+        return window.location.href.toLowerCase().replace("exampleui/index.html", "api/");
     }
 
 
