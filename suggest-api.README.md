@@ -22,11 +22,12 @@ Suggest currently offers three service methods
 
 A Suggest query returns a list of Suggestions:
 
-- *Name*:  the name of a place, including state/province (depending on country) and country code. 
-- *Latitude*
-- *Longitude*
+- *Name*:  the name of a place, including state/province (depending on country) and country code (optional). 
+- *Latitude* (required if Longitude is provided)
+- *Longitude* (required if Latitude is provided)
 - *Certainty*:  Indicates how relevant a search result/suggestion is to its source query
 - *Links*: A collection of links that can be used to navigate the Api using the Suggestion's coordinates
+- *MaxResults* the maximum number of results that should be returned, ordered descending by Certainty (optional, default is 10)
 
 Example JSON response :
 
@@ -58,7 +59,7 @@ Example JSON response :
     "Name": "Cicero, IL, US",
     "Latitude": 41.84559,
     "Longitude": -87.75394,
-    "Certainty": 0.8571428571428571,
+    "Certainty": 0.86,
     "Links": [
       {
         "Href": "http://geo-complete-test.us-west-2.elasticbeanstalk.com/api/Airports?longitude=-87.75394&latitude=41.84559",
@@ -104,7 +105,7 @@ Example JSON response :
     "Name": "Charleston, IL, US",
     "Latitude": 41.91419,
     "Longitude": -88.30869,
-    "Certainty": 0.6666666666666666,
+    "Certainty": 0.67,
     "Links": [
       {
         "Href": "http://geo-complete-test.us-west-2.elasticbeanstalk.com/api/Airports?longitude=-88.30869&latitude=41.91419",
@@ -127,7 +128,7 @@ Example JSON response :
     "Name": "Crest Hill, IL, US",
     "Latitude": 41.55475,
     "Longitude": -88.09867,
-    "Certainty": 0.6666666666666666,
+    "Certainty": 0.67,
     "Links": [
       {
         "Href": "http://geo-complete-test.us-west-2.elasticbeanstalk.com/api/Airports?longitude=-88.09867&latitude=41.55475",
@@ -172,7 +173,7 @@ Suggest is a .Net Web Api 2.0 app developed using Visual Studio 2015:
 - [Nuget](http://nuget.org/) for package management
 - unit tested with [NUnit](http://nunit.org/) and [Moq](https://github.com/moq/moq)
 - DI via MS Unity
-- [Fiddler](http://www.telerik.com/fiddler) for functional testing
+- [Fiddler](http://www.telerik.com/fiddler) and [Advanced Rest Client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo?hl=en-US) for functional testing
 
 ## Deployment
 Deployed to AWS via the AWS toolkit for Visual Studio
