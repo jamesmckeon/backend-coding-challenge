@@ -22,34 +22,28 @@ namespace GeoHub.Services
         /// </summary>
         public class ServiceCacheKey : IEquatable<ServiceCacheKey>
         {
-
-            private DateTime _createdDate;
-            private string _searchTerm = null;
-            private BoundingBox _boundingBox = null;
-            private int _maxResults = -1;
-
-            public DateTime CreatedTime
+            public static bool operator ==(ServiceCacheKey left, ServiceCacheKey right)
             {
-                get { return _createdDate; }
+                return Equals(left, right);
             }
+
+            public static bool operator !=(ServiceCacheKey left, ServiceCacheKey right)
+            {
+                return !Equals(left, right);
+            }
+
+            public DateTime CreatedTime { get; }
 
             /// <summary>
             /// The value of maxResults that was passed to the underlying IGeoDataProvider instance when it was last queried
             /// </summary>
-            public int MaxResults
-            {
-                get { return _maxResults; }
-            }
-            public string SearchTerm
-            {
-                get { return _searchTerm; }
-            }
+            public int MaxResults { get; } = -1;
 
-            public BoundingBox BoundingBox
-            {
-                get { return _boundingBox; }
-            }
-            protected IEqualityComparer<string> StringComparer { get; set; }
+            public string SearchTerm { get; } = null;
+
+            public BoundingBox BoundingBox { get; } = null;
+
+            protected IEqualityComparer<string> StringComparer { get; }
 
             /// <param name="stringComparer"></param>
             /// <param name="boundingBox"></param>
@@ -74,43 +68,33 @@ namespace GeoHub.Services
                     throw new ArgumentOutOfRangeException(nameof(maxResults));
                 }
 
-                _boundingBox = boundingBox;
-                _searchTerm = searchTerm;
-                _maxResults = maxResults;
-                _createdDate = DateTime.Now;
+                BoundingBox = boundingBox;
+                SearchTerm = searchTerm;
+                MaxResults = maxResults;
+                CreatedTime = DateTime.Now;
             }
 
             public override bool Equals(object obj)
             {
-                return Equals(obj as ServiceCacheKey);
+                if (ReferenceEquals(null, obj)) return false;
+                if (ReferenceEquals(this, obj)) return true;
+                if (obj.GetType() != this.GetType()) return false;
+                return Equals((ServiceCacheKey) obj);
             }
 
             public override int GetHashCode()
             {
-                if (BoundingBox == null)
+                unchecked
                 {
-                    return StringComparer.GetHashCode(SearchTerm);
-                }
-                else
-                {
-                    return StringComparer.GetHashCode(SearchTerm) + BoundingBox.GetHashCode();
+                    return ((SearchTerm != null ? StringComparer.GetHashCode(SearchTerm) : 0) * 397) ^ (BoundingBox != null ? BoundingBox.GetHashCode() : 0);
                 }
             }
 
             public bool Equals(ServiceCacheKey other)
             {
-                if (other == null)
-                {
-                    return false;
-                }
-                else if (BoundingBox == null)
-                {
-                    return StringComparer.Equals(SearchTerm, other.SearchTerm);
-                }
-                else
-                {
-                    return StringComparer.Equals(SearchTerm, other.SearchTerm) && BoundingBox.Equals(other.BoundingBox);
-                }
+                if (ReferenceEquals(null, other)) return false;
+                if (ReferenceEquals(this, other)) return true;
+                return string.Equals(SearchTerm, other.SearchTerm) && Equals(BoundingBox, other.BoundingBox);
             }
         }
         protected TimeSpan CacheDuration { get; set; }

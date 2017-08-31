@@ -11,6 +11,16 @@ namespace GeoHub.Logic
     /// </summary>
     public class GeoDataEntry: IEquatable<GeoDataEntry>
     {
+        public static bool operator ==(GeoDataEntry left, GeoDataEntry right)
+        {
+            return Equals(left, right);
+        }
+
+        public static bool operator !=(GeoDataEntry left, GeoDataEntry right)
+        {
+            return !Equals(left, right);
+        }
+
         /// <summary>
         /// Name depends on the type of place returned; IGeoDataProviders should implement disambiguation logic that uniquely names GeoDataEntries, as no other unique identifier is specified
         /// </summary>
@@ -20,26 +30,28 @@ namespace GeoHub.Logic
 
         public override int GetHashCode()
         {
-            return Name.GetHashCode() + Latitude.GetHashCode() + Longitude.GetHashCode();
+            unchecked
+            {
+                var hashCode = (Name != null ? Name.GetHashCode() : 0);
+                hashCode = (hashCode * 397) ^ Latitude.GetHashCode();
+                hashCode = (hashCode * 397) ^ Longitude.GetHashCode();
+                return hashCode;
+            }
         }
 
         public override bool Equals(object obj)
         {
-            return Equals(obj as GeoDataEntry);
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((GeoDataEntry) obj);
         }
 
         public bool Equals(GeoDataEntry other)
         {
-            if (other == null)
-            {
-                return false;
-            }
-
-            else
-            {
-
-                return other.Name.Equals(Name) & other.Latitude == Latitude && other.Longitude == Longitude;
-            }
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return string.Equals(Name, other.Name) && Latitude.Equals(other.Latitude) && Longitude.Equals(other.Longitude);
         }
     }
 

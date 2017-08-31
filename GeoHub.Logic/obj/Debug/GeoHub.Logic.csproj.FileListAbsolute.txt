@@ -7,3 +7,8 @@ C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\bin\Debug\GeoHub.Logic.pdb
 C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\obj\Debug\GeoHub.Logic.dll
 C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\obj\Debug\GeoHub.Logic.pdb
 C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.Logic\obj\Debug\GeoHub.Logic.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\bin\Debug\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\bin\Debug\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\obj\Debug\GeoHub.Logic.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\obj\Debug\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\obj\Debug\GeoHub.Logic.pdb

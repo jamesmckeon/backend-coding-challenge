@@ -20,3 +20,14 @@ C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\bin\Debug\RestSharp.
 C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\obj\Debug\GeoHub.GeoNamesClient.csprojResolveAssemblyReference.cache
 C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\obj\Debug\GeoHub.GeoNamesClient.dll
 C:\Users\jbmckeon\Source\Repos\GeoHub\GeoHub.GeoNamesClient\obj\Debug\GeoHub.GeoNamesClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\GeoHub.GeoNamesClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\GeoHub.Logic.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\GeoHub.RestClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\RestSharp.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\bin\Debug\RestSharp.xml
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\obj\Debug\GeoHub.GeoNamesClient.csprojResolveAssemblyReference.cache
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\obj\Debug\GeoHub.GeoNamesClient.dll
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.GeoNamesClient\obj\Debug\GeoHub.GeoNamesClient.pdb

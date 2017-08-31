@@ -41,13 +41,11 @@ namespace GeoHub.Logic.Tests
         }
 
         [Test]
-        public void GetHasCode_ReturnsExpected()
+        public void GetHasCode_ValuesFlipped_AreNotEqual()
         {
-            var coordinates = new Coordinates() { Latitude = 5.5, Longitude = -99 };
-            var radius = 10;
-            var box = new BoundingBox(coordinates, radius);
-            Assert.AreEqual(coordinates.GetHashCode() + radius.GetHashCode(), box.GetHashCode());
-
+            var a = new BoundingBox(new Coordinates(){Latitude = 1, Longitude = 2}, 1);
+            var b = new BoundingBox(new Coordinates(){Latitude = 2, Longitude = 1}, 1);
+            Assert.AreNotEqual(a.GetHashCode(), b.GetHashCode());
         }
     }
 

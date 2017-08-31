@@ -7,26 +7,27 @@ namespace GeoHub.Logic
     /// </summary>
     public class BoundingBox:IEquatable<BoundingBox>
     {
-        private Coordinates _coordinates = null;
-        private int _radius = -1;
+        public static bool operator ==(BoundingBox left, BoundingBox right)
+        {
+            return Equals(left, right);
+        }
+
+        public static bool operator !=(BoundingBox left, BoundingBox right)
+        {
+            return !Equals(left, right);
+        }
 
         /// <summary>
         /// The point/coordinates at center of the bounding box
         /// </summary>
-        public Coordinates Point
-        {
-            get { return _coordinates; }
-        }
+        public Coordinates Point { get; } = null;
 
         /// <summary>
         /// THe radius (box) around Point, in km
         /// </summary>
-        public int Radius
-        {
-            get { return _radius; }
-        }
+        public int Radius { get; } 
 
-        
+
         public BoundingBox(Coordinates coordinates, int radius) 
         {
             if (coordinates == null)
@@ -34,37 +35,37 @@ namespace GeoHub.Logic
                 throw  new ArgumentNullException(nameof(coordinates));
             }
 
-            _coordinates = coordinates;
+            Point = coordinates;
 
             if (radius < 0)
             {
                 throw new ArgumentException(nameof(radius));
             }
 
-            _radius = radius;
+            Radius = radius;
         }
 
         public bool Equals(BoundingBox other)
         {
-            if (other == null)
-            {
-                return false;
-            }
-            else
-            {
-                
-                return Point.Equals(other.Point) && Radius == other.Radius;
-            }
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return Equals(Point, other.Point) && Radius == other.Radius;
         }
 
         public override bool Equals(object obj)
         {
-            return Equals(obj as BoundingBox);
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((BoundingBox) obj);
         }
 
         public override int GetHashCode()
         {
-            return Point.GetHashCode() + Radius.GetHashCode();
+            unchecked
+            {
+                return ((Point != null ? Point.GetHashCode() : 0) * 397) ^ Radius;
+            }
         }
     }
 }

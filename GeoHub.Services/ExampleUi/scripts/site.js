@@ -3,6 +3,7 @@
 var ExampleApp = (function () {
     var isInitialized = false;
 
+
     //holds results of "search near your location" checkbox
     var localCoordinates;
 
@@ -13,7 +14,9 @@ var ExampleApp = (function () {
     //returns Base Url of current deployment
     function getApiBaseUrl() {
 
-        return window.location.href.toLowerCase().replace("exampleui/index.html", "api/");
+       return "http://geo-complete-test.us-west-2.elasticbeanstalk.com/api/";
+
+        //return "http://localhost/GeoHub.Services/api/"
     }
 
 

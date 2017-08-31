@@ -32,7 +32,7 @@ namespace GeoHub.Logic
             PercentageRounder = percentageRounder;
         }
 
-        public const string EitherSourcecoordinatesOrSearchtermMustBeProvidedMessage = "Either sourceCoordinates or searchTerm must be provided";
+       public const string EitherSourcecoordinatesOrSearchtermMustBeProvidedMessage = "Either sourceCoordinates or searchTerm must be provided";
 
         /// <summary>
         /// Ranks entries relative to matching name length

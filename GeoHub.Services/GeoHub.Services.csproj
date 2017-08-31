@@ -220,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Documentation\DataProviders.cd" />
     <None Include="ExampleUi\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ExampleUi\index.html" />
     <Content Include="ExampleUi\Reset.css" />

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GeoHub.GeoNamesClient.AirportProvider" BaseTypeListCollapsed="true">
+    <Position X="8" Y="2.25" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GeoHub.GeoNamesClient.HospitalProvider" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="2.25" Width="2.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GeoHub.GeoNamesClient.LargeCityDataProvider" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="7" Width="2.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GeoHub.Services.ServiceCache" BaseTypeListCollapsed="true">
+    <Position X="13" Y="6.5" Width="2" />
+    <NestedTypes>
+      <Class Name="GeoHub.Services.ServiceCache.ServiceCacheKey" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ServiceCache.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAACAAAABgAQBAAAAAAAAAAAAAAAAgACA=</HashCode>
+      <FileName>ServiceCache.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="GeoHub.Logic.IGeoDataProvider">
+    <Position X="11.25" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

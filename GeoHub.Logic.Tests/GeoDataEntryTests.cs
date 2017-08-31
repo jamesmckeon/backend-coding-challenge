@@ -23,6 +23,14 @@ namespace GeoHub.Logic.Tests
         }
 
         [Test]
+        public void GetHashCode_LatitudeAndLongitudeFlipped_AreNotEqual()
+        {
+            var a = new GeoDataEntry() { Name = "A", Latitude = 1.01, Longitude = 2.0 };
+            var b = new GeoDataEntry() { Name = "A", Latitude = a.Longitude, Longitude = a.Latitude };
+            Assert.AreNotEqual(a.GetHashCode(), b.GetHashCode());
+        }
+
+        [Test]
         public void Equals_DifferentLongitude_AreNotEqual()
         {
             var a = new GeoDataEntry() { Name = "A", Latitude = 1.0, Longitude = 2.0 };
@@ -38,12 +46,6 @@ namespace GeoHub.Logic.Tests
             Assert.AreEqual(a, b);
         }
 
-        [Test]
-        public void GetHasCode_ReturnsExpected()
-        {
-            var a = new GeoDataEntry() { Name = "A", Latitude = 1.0, Longitude = 2.0 };
-          
-            Assert.AreEqual(a.Name.GetHashCode() + a.Latitude.GetHashCode() + a.Longitude.GetHashCode(), a.GetHashCode());
-        }
+       
     }
 }

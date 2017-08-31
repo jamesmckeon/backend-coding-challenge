@@ -23,3 +23,4 @@ C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.RestClient\
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.RestClient\bin\Test\RestSharp.xml
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.RestClient\obj\Test\GeoHub.RestClient.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.RestClient\obj\Test\GeoHub.RestClient.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.RestClient\obj\Test\GeoHub.RestClient.csprojResolveAssemblyReference.cache

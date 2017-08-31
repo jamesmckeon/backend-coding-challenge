@@ -14,3 +14,4 @@ C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\bin\T
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\bin\Test\GeoHub.Logic.pdb
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\obj\Test\GeoHub.Logic.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\obj\Test\GeoHub.Logic.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Logic\obj\Test\GeoHub.Logic.csprojResolveAssemblyReference.cache

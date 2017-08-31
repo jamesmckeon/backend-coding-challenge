@@ -3,12 +3,23 @@ using System.Device.Location;
 
 namespace GeoHub.Logic
 {
+    /// <inheritdoc />
     /// <summary>
     /// A geographical point
     /// </summary>
     /// <remarks>Could've used GeoCoordinate class in .Net, but I didn't realize it existed until late in the game</remarks>
     public class Coordinates: IEquatable< Coordinates>
     {
+        public static bool operator ==(Coordinates left, Coordinates right)
+        {
+            return Equals(left, right);
+        }
+
+        public static bool operator !=(Coordinates left, Coordinates right)
+        {
+            return !Equals(left, right);
+        }
+
         /// <summary>
         /// returns Coordinates for NYC
         /// </summary>
@@ -80,24 +91,25 @@ namespace GeoHub.Logic
 
         public override bool Equals(object obj)
         {
-            return Equals(obj as Coordinates);
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((Coordinates) obj);
         }
 
         public override int GetHashCode()
         {
-            return Longitude.GetHashCode() + Latitude.GetHashCode();
+            unchecked
+            {
+                return (Latitude.GetHashCode() * 397) ^ Longitude.GetHashCode();
+            }
         }
 
         public bool Equals(Coordinates other)
         {
-            if (other == null)
-            {
-                return false;
-            }
-            else
-            {
-                return Longitude == other.Longitude && Latitude == other.Latitude;
-            }
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return Latitude.Equals(other.Latitude) && Longitude.Equals(other.Longitude);
         }
     }
 }

@@ -87,10 +87,11 @@ namespace GeoHub.Logic.Tests
         }
 
         [Test]
-        public void GetHasCode_ReturnsExpected()
+        public void GetHasCode_SameValuesFlipped_AreNotEqual()
         {
             var a = new Coordinates() { Longitude = -1.000000001, Latitude = 2.0000001 };
-            Assert.AreEqual(a.Longitude.GetHashCode() + a.Latitude.GetHashCode(), a.GetHashCode());
+            var b = new Coordinates() {Longitude = a.Latitude, Latitude = a.Longitude};
+            Assert.AreNotEqual(a.GetHashCode(), b.GetHashCode());
 
         }
     }

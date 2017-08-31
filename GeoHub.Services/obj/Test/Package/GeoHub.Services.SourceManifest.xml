@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<sitemanifest>
-  <IisApp path="C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\obj\Test\Package\PackageTmp" />
-  <setAcl path="C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\obj\Test\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services\obj\Test\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
-</sitemanifest>

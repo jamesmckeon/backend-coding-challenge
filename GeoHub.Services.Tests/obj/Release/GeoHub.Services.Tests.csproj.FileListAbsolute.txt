@@ -186,3 +186,4 @@ C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services.Te
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services.Tests\obj\Release\GeoHub.Services.Tests.csprojResolveAssemblyReference.cache
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services.Tests\obj\Release\GeoHub.Services.Tests.dll
 C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services.Tests\obj\Release\GeoHub.Services.Tests.pdb
+C:\Users\jbmckeon\Documents\Visual Studio 2017\Projects\coveo\GeoHub.Services.Tests\bin\Release\GeoHub.Services.dll.config
